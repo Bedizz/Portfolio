@@ -45,7 +45,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         {/* here !leading is for overwriting it on text-2xl  */}
-        Hi, I'm <span className="font-bold">Bediz Türkyılmaz</span>, a{" "}
+        Hi, I&apos;m <span className="font-bold">Bediz Türkyılmaz</span>, a{" "}
         <span className="font-bold">Full Stack Developer.</span> I build modern
         web applications with{" "}
         <span className="italic">
