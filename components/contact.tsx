@@ -1,13 +1,18 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import SectionHeading from "./sectionHeading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
-
 import  Button  from "../components/button";
+
+
+
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact",0.75);
+    
+    const formRef = useRef<HTMLFormElement>(null);
     
 
   return (
@@ -22,12 +27,20 @@ export default function Contact() {
         </a>{" "}
         or through this form
       </p>
-      <form className="mt-10 flex flex-col" action={async(formData) => { const {data,error} = await sendEmail(formData);
-    if(error){
-      alert("An error occured. Please try again later.")
-    } else {
-    alert("Your message has been sent. I will get back to you as soon as possible.")}
-    }} >
+        <form ref={formRef} className="mt-10 flex flex-col" action={async (formData) => {
+            const response = await sendEmail(formData);
+            if ('error' in response) {
+              alert(response.error);
+            } else {
+              alert("Message sent successfully");
+              
+              if(formRef.current) {
+                formRef.current.reset();
+              }
+              
+
+            }
+      }} >
         {/* only works in next.js */}
         <input
           className="h-14 px-4 rounded-lg border-black"
