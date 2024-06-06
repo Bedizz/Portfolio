@@ -15,19 +15,23 @@ export default function About() {
     transition={{delay:0.175}}
     id="about">
       <SectionHeading>About me</SectionHeading>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
-        voluptate? Esse itaque ratione, maxime at nobis neque ipsam omnis
-        tenetur. Cumque nostrum magni voluptate! Sed aut ipsum consequatur esse
-        eum.
+      <p className="mb-3">
+        After graduating with a degree in{" "}
+        <span className="font-medium">Business Administration</span>,I worked as a  <span className="font-medium">Marketing Pro</span> for 1 year. After 1 year, I decided to pursue my
+        passion for programming although my company wanted to extend my contract. I enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium">full-stack web development</span>.{" "}
+        <span className="italic">My favorite part of programming</span> is the
+        problem-solving aspect. I <span className="underline">love</span> the
+        feeling of finally figuring out a solution to a problem. My core stack
+        is{" "}
+        <span className="font-medium">
+          React, Express, Node.js, and MongoDB
+        </span>
+        . I am also familiar with <span className="font-medium"> Redux, Redis, TypeScript and  Next.js.</span> I am always looking to
+        learn new technologies. I am currently looking for a{" "}
+        <span className="font-medium">full-time position</span> as a software
+        developer.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quas
-        tempore omnis vero officia praesentium eligendi, sapiente modi alias
-        ipsam non commodi nam quos molestiae ullam distinctio architecto
-        possimus maxime!
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid nulla a quisquam delectus vero error pariatur nesciunt voluptatem, molestiae, temporibus sequi quis accusamus at voluptates saepe rem, quod accusantium.</p>
     </motion.section>
   );
 }

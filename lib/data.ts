@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import Tomato from "@/public/Tomato.jpg";
+import Aora from "@/public/Aora.png";
+import Portfolio from "@/public/Portfolio.png";
 
 export const links = [
   {
@@ -36,52 +36,60 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "University Graduation",
+    location: "İzmir, Turkey",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated from university with a degree in Business Administration as a honour student.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021-2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Integration and German Course",
+    location: "Berlin, Germany",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I attended an integration course for 2 months and a German course for 4 months. I learned German at B1 level.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021-2022",
+  },
+  {
+    title: "Marketing Pro",
+    location: "Berlin, Germany",
+    description:
+      "I worked as Marketing Pro for 1 year.I was responsible for more than hundred social media agencies, managing their budgets and campaigns in META.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Graduated from WBS Coding Bootcamp",
+    location: "Berlin, Germany",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I'm now a full-stack developer improving my skills and learning a new thing everyday. My stack includes React, Next.js, Redux, React Native, TypeScript, Tailwind, Node.js and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact ),
+    date: "2024 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Tomato - Food Delivery App",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: ["React",, "MongoDB", "Express", "Node.js"],
+    imageUrl: Tomato,
   },
   {
-    title: "rmtDev",
+    title: "Aora - Video Sharing App",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    tags: ["React Native", "Expo", "Nativewind", "Appwrite"],
+    imageUrl: Aora,
   },
   {
-    title: "Word Analytics",
+    title: "Portfolio App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A public web app for sharing my projects and experiences. I built it with Next.js and Tailwind CSS",
+    tags: ["React", "Next.js", "clsx","toast", "Tailwind", "Framer Motion"],
+    imageUrl: Portfolio,
   },
 ] as const;
 
@@ -89,20 +97,17 @@ export const skillsData = [
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
+  "Express",
   "React",
   "Next.js",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "SQL",
+  "NoSQL",
+  "MongoDB",
+  "Redis",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
