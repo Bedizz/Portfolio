@@ -43,7 +43,7 @@ export default function Contact() {
       }} >
         {/* only works in next.js */}
         <input
-          className="h-14 px-4 rounded-lg border-black"
+          className="h-14 px-4 rounded-lg border-black dark:text-black"
           type="email"
           placeholder="Your email"
           name="email"
@@ -51,7 +51,7 @@ export default function Contact() {
         />
         <textarea
         placeholder="Your message"
-          className="h-52 my-3 rounded-lg border-black p-4"
+          className="h-52 my-3 rounded-lg border-black p-4 dark:text-black"
           name="textArea"
           id="textArea"
           required
