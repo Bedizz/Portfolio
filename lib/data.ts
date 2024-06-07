@@ -76,6 +76,7 @@ export const projectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React",, "MongoDB", "Express", "Node.js"],
     imageUrl: Tomato,
+    gitUrl:"https://github.com/Bedizz/FoodDeliveryApp"
   },
   {
     title: "Aora - Video Sharing App",
@@ -83,6 +84,7 @@ export const projectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React Native", "Expo", "Nativewind", "Appwrite"],
     imageUrl: Aora,
+    gitUrl:"https://github.com/Bedizz/ReactNativeApp"
   },
   {
     title: "Portfolio App",
@@ -90,6 +92,7 @@ export const projectsData = [
       "A public web app for sharing my projects and experiences. I built it with Next.js and Tailwind CSS",
     tags: ["React", "Next.js", "clsx","toast", "Tailwind", "Framer Motion"],
     imageUrl: Portfolio,
+    gitUrl:"https://github.com/Bedizz/Portfolio"
   },
 ] as const;
 

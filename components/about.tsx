@@ -5,7 +5,7 @@ import { useSectionInView } from "@/lib/hooks";
 
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("About",1);
   return (
     <motion.section 
     ref={ref} className="mb-10 max-w-[45rem] text-center leading-8  scroll-mt-28 sm:mb-10"
@@ -21,8 +21,7 @@ export default function About() {
         passion for programming although my company wanted to extend my contract. I enrolled in a coding bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
+        creating something special aspect. I <span className="underline">love</span> and <span className="underline">enjoy</span> observing the evolution and development process of a code while writing it. My core stack
         is{" "}
         <span className="font-medium">
           React, Express, Node.js, and MongoDB
