@@ -73,15 +73,15 @@ export const projectsData = [
   {
     title: "Tomato - Food Delivery App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React",, "MongoDB", "Express", "Node.js"],
+      "This project contains a clone of a simple food delivery application. Users can view restaurant menus, place food orders, and track the status of their orders.",
+    tags: ["React", "MongoDB", "Node.js", "JWT Token","Stripe", "multer" ],
     imageUrl: Tomato,
     gitUrl:"https://github.com/Bedizz/FoodDeliveryApp"
   },
   {
     title: "Aora - Video Sharing App",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "Providing video sharing feature with your own account.Features include filtering, sorting, and pagination",
     tags: ["React Native", "Expo", "Nativewind", "Appwrite"],
     imageUrl: Aora,
     gitUrl:"https://github.com/Bedizz/ReactNativeApp"
@@ -94,6 +94,15 @@ export const projectsData = [
     imageUrl: Portfolio,
     gitUrl:"https://github.com/Bedizz/Portfolio"
   },
+  {
+    title: "Threads Clone- Social Media App",
+    description:
+      "It is a clone of the popular social media app Threads.",
+    tags: ["Chakra UI", "Socket.io","React", "Recoil", "MongoDB","toast", "Express","Node.js",],
+    imageUrl: ThreadsClone,
+    gitUrl:"https://github.com/Bedizz/ThreadsClone"
+  }
+
 ] as const;
 
 export const skillsData = [
@@ -113,4 +122,11 @@ export const skillsData = [
   "Redis",
   "PostgreSQL",
   "Framer Motion",
+  "Recoil",
+  "Chakra UI",
+  "Socket.io",
+  "Toast",
+  "Appwrite",
+  "NativeWind",
+  "TypeScript"
 ] as const;
