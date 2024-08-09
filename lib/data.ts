@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import Tomato from "@/public/Tomato.jpg";
 import Aora from "@/public/Aora.png";
 import Portfolio from "@/public/Portfolio.png";
+import ThreadsClone from "@/public/Threads.png";
 
 export const links = [
   {
